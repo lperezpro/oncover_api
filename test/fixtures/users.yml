@@ -1,0 +1,49 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id                     :bigint           not null, primary key
+#  first_names            :string
+#  last_names             :string
+#  phone_number           :integer
+#  date_birth             :date
+#  document_id            :string
+#  gender                 :integer
+#  email                  :string
+#  password_digest        :string
+#  id_gg                  :string
+#  email_gg               :string
+#  token_gg               :string
+#  id_fb                  :string
+#  email_fb               :string
+#  token_fb               :string
+#  last_login             :datetime
+#  validated_email        :boolean          default(FALSE)
+#  email_token            :string
+#  email_token_sent_at    :datetime
+#  reset_password_token   :string
+#  reset_password_sent_at :datetime
+#  last_reset_password    :datetime
+#  created_at             :datetime         not null
+#  updated_at             :datetime         not null
+#
+
+one:
+  first_names: MyString
+  last_names: MyString
+  phone_number: 1
+  date_birth: 2021-07-01
+  document_id: MyString
+  genders: 1
+  email: MyString
+  password_digest: MyString
+
+two:
+  first_names: MyString
+  last_names: MyString
+  phone_number: 1
+  date_birth: 2021-07-01
+  document_id: MyString
+  genders: 1
+  email: MyString
+  password_digest: MyString
