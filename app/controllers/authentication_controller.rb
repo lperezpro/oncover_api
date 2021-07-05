@@ -45,10 +45,10 @@ class AuthenticationController < ApplicationController
   private
 
   def login_params_google
-    params.permit(:id_gg, :email_gg, :token_gg)
+    params.permit(:id_gg, :email_gg, :token_gg, :date_birth, :gender)
   end
 
   def login_params_facebook
-    params.permit(:id_fb, :email_fb, :token_fb)
+    params.permit(:id_fb, :email_fb, :token_fb, :date_birth, :gender)
   end
 end
